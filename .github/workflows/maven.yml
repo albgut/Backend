@@ -39,6 +39,7 @@ jobs:
       with:
         java-version: ${{ matrix.java-version }}
         cache: maven
+        distribution: 'temurin'
     - name: Use  ${{ matrix.os-version }}
       uses: actions/setup-java@v2
       with:
