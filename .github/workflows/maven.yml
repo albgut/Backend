@@ -23,7 +23,9 @@ jobs:
         cache: maven
         distribution: 'temurin'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: |
+        docker-compose -p periscol up -d
+        mvn -B package --file pom.xml
   test:
     needs: build
     runs-on: ubuntu-latest
