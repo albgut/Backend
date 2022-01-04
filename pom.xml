@@ -22,6 +22,9 @@
         <io.jsonwebtoken.version>0.11.2</io.jsonwebtoken.version>
         <com.auth0.version>1.35.0</com.auth0.version>
         <com.auth0.spring.version>1.4.1</com.auth0.spring.version>
+        <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+        <mysql.version>8.0.21</mysql.version>
+        <org.hsqlbdb.version>2.5.1</org.hsqlbdb.version>
     </properties>
 
     <dependencies>
@@ -46,6 +49,24 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+		<dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${org.mapstruct.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>${org.hsqlbdb.version}</version>
+        </dependency>	
 
         <dependency>
             <groupId>org.springdoc</groupId>
