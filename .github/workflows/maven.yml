@@ -46,6 +46,7 @@ jobs:
         java-version: ${{ matrix.java-version }}
     - name: Build and test
       run: |
+        docker-compose -p periscol up -d
         mvn install
         mvn test
       env:
